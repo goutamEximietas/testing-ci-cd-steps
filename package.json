@@ -1,0 +1,16 @@
+{
+  "name": "nodejs-ci-demo",
+  "version": "1.0.0",
+  "description": "My first CI/CD project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
