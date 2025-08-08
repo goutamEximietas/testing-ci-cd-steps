@@ -27,6 +27,9 @@ jobs:
     - name: Install dependencies
       run: npm install
     
+    - name: Run ESLint
+      run: npm run lint
+    
     - name: Run tests
       run: npm test
     
@@ -49,7 +52,8 @@ jobs:
     - name: Install dependencies
       run: npm install
     
-    - name: Check code style
+    - name: Run comprehensive linting
       run: |
-        echo "Code style check passed!"
-        echo "All files look good!"
+        npm run lint
+        echo "✅ ESLint checks passed!"
+        echo "✅ Code follows style guidelines!"
